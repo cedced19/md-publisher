@@ -21,7 +21,7 @@ var template = function (options, cb) {
         body2 = '</div></body></html>';
     
     if (typeof options.bootstrap == 'undefined') {
-        cb(head1 + options.title + head2 + '//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css' + body1 + marked(options.content) + body2); 
+        cb(head1 + options.title + head2 + 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css' + body1 + marked(options.content) + body2); 
     } else {
         cb(head1 + options.title + head2 + options.bootstrap + body1 + marked(options.content) + body2);
     }
