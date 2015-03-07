@@ -1,0 +1,42 @@
+{
+  "name": "md-publisher",
+  "version": "0.0.0",
+  "description": "Convert Markdown to a lite HTML page.",
+  "main": "index.js",
+  "dependencies": {
+    "colors": "^1.0.3",
+    "html-minifier": "^0.7.0",
+    "marked": "^0.3.2"
+  },
+  "scripts": {
+    "test": "mocha --timeout 20000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cedced19/md-publisher"
+  },
+  "keywords": [
+    "md",
+    "publisher",
+    "cli",
+    "fast"
+  ],
+  "bugs": {
+    "url": "https://github.com/cedced19/md-publisher/issues"
+  },
+  "homepage": "https://github.com/cedced19/md-publisher",
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  },
+  "author": {
+    "name": "Cédric",
+    "email": "cedced19@gmail.com",
+    "url": "https://github.com/cedced19"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://cedced19.github.io/license/"
+    }
+  ]
+}
