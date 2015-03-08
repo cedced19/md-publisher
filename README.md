@@ -41,7 +41,7 @@ Define path of bootstrap.
 
 ```bash
 $ npm install -g md-publisher-cli
-$ md -f 
+$ md-publisher -f 
 ```
 
 ### Options
