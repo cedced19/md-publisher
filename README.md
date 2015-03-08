@@ -36,3 +36,20 @@ Type: `string`
 Type: `string`  
 
 Define path of bootstrap.
+
+## CLI
+
+```bash
+$ npm install -g md-publisher-cli
+$ md -f 
+```
+
+### Options
+
+```
+-h, --help                  output usage information
+
+-V, --version               output the version number
+
+-f  --file [string]         specified the file without extention
+```

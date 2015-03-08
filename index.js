@@ -29,6 +29,6 @@ var template = function (options, cb) {
 
 module.exports = function (options, cb) {
     template(options, function (page) {
-        cb(minify(page, {removeComments: true}));
+        cb(minify(page, {removeComments: true, collapseWhitespace: true}));
     });
 };

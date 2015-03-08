@@ -1,14 +1,12 @@
 {
-  "name": "md-publisher",
-  "version": "0.0.2",
-  "description": "Convert Markdown to a lite HTML page with Bootstrap.",
-  "main": "index.js",
+  "name": "md-publisher-cli",
+  "version": "0.0.1",
+  "description": "Convert Markdown file  to a lite HTML file with Bootstrap.",
+  "main": "md-publisher-cli.js",
   "dependencies": {
-    "html-minifier": "^0.7.0",
-    "marked": "^0.3.3"
-  },
-  "scripts": {
-    "test": "mocha --timeout 20000"
+    "colors": "^1.0.3",
+    "commander": "^2.6.0",
+    "md-publisher": "0.0.2"
   },
   "repository": {
     "type": "git",
@@ -16,17 +14,19 @@
   },
   "keywords": [
     "md",
+    "markdown",
+    "html",
     "publisher",
     "cli",
     "fast"
   ],
+  "bin": {
+    "md-publisher": "md-publisher-cli.js"
+  },
   "bugs": {
     "url": "https://github.com/cedced19/md-publisher/issues"
   },
-  "homepage": "https://github.com/cedced19/md-publisher",
-  "devDependencies": {
-    "mocha": "^2.1.0"
-  },
+  "homepage": "https://github.com/cedced19/md-publisher/cli",
   "author": {
     "name": "Cédric",
     "email": "cedced19@gmail.com",
