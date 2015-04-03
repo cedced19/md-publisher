@@ -15,12 +15,12 @@ program
 var filename = process.cwd() + '/' + program.file + '.md';
 
 if (typeof program.file == 'undefined') {
-    console.log('Please set a file.'.red);
-    process.exit(1);
+    console.log('Please set a file with -f. \nThe README.md will be converted.'.red);
+    program.file = 'README';
 }
 
 if (!fs.existsSync(filename)) {
-    console.log(colors.red('Error! File: ' + program.file + '.md does not existing.'));
+    console.log(colors.red('Error! File: ' + program.file + '.md does not existing. \nMaybe, you set the filename with the extention.'));
     process.exit(1);
 }
 

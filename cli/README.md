@@ -7,7 +7,7 @@ Convert Markdown file  to a lite HTML file with Bootstrap.
 
 ```bash
 $ npm install -g md-publisher-cli
-$ md-publisher -f [filename]
+$ md-publisher -f [filename without extention]
 ```
 
 ## Options
