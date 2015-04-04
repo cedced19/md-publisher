@@ -15,7 +15,7 @@ marked.setOptions({
 });
     
 var template = function (options, cb) {
-    var head1 = '<html lang="fr"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>',
+    var head1 = '<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta http-equiv="X-UA-Compatible" content="IE=edge;"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>',
         head2 = '</title><link rel="stylesheet" href="',
         body1 = '"></head><body><div class="container">',
         body2 = '</div></body></html>';

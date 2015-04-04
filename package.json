@@ -1,6 +1,6 @@
 {
   "name": "md-publisher",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Convert Markdown to a lite HTML page with Bootstrap.",
   "main": "index.js",
   "dependencies": {
