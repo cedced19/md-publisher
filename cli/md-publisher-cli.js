@@ -10,11 +10,20 @@ var program = require('commander'),
 program
     .version(pkg.version)
     .option('-f, --file [string]', 'specified the file without extention')
+    .option('-c, --check', 'check if there are an update')
     .parse(process.argv);
 
 if (typeof program.file == 'undefined') {
     console.log('Please set a file with -f. \nThe README.md will be converted.'.red);
     program.file = 'README';
+}
+
+if (program.check) {
+    require('check-update')({packageName: pkg.name, packageVersion: pkg.version, isCLI: true}, function(err, latestVersion, defaultMessage){
+        if(!err){
+            console.log(defaultMessage);
+        }
+    });
 }
 
 var filename = process.cwd() + '/' + program.file + '.md';

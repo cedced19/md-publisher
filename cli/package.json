@@ -1,9 +1,10 @@
 {
   "name": "md-publisher-cli",
-  "version": "0.0.3",
-  "description": "Convert Markdown file  to a lite HTML file with Bootstrap.",
+  "version": "0.0.4",
+  "description": "Convert Markdown file to a lite HTML file with Bootstrap.",
   "main": "md-publisher-cli.js",
   "dependencies": {
+    "check-update": "0.0.8",
     "colors": "^1.0.3",
     "commander": "^2.6.0",
     "md-publisher": "0.0.3"
