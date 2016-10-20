@@ -29,7 +29,7 @@ if (program.check) {
 var filename = process.cwd() + '/' + program.file + '.md';
 
 if (!fs.existsSync(filename)) {
-    console.log(colors.red('Error! File: ' + program.file + '.md does not existing. \nMaybe, you setted the filename with the extention.'));
+    console.log(colors.red('Error! File: ' + program.file + '.md does not existing. \nMaybe, you set the filename with the extention.'));
     process.exit(1);
 }
 
